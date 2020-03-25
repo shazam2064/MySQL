@@ -1,4 +1,6 @@
 USE CONTACTS;
 
-SELECT *
+SELECT person_first_name
 FROM person;
+
+
