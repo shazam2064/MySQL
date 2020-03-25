@@ -1,0 +1,4 @@
+USE CONTACTS;
+
+SELECT *
+FROM person;
