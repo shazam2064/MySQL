@@ -4,7 +4,7 @@ USE CONTACTS;
 FROM person p
 ORDER BY p.person_last_name;*/
 
- SELECT COUNT(person_first_name)
+/* SELECT COUNT(person_first_name)
 FROM person p
 WHERE p.person_last_name = 'Ahern';
 
@@ -18,5 +18,9 @@ WHERE p.person_last_name = 'Ahern';
  FROM person p;
  
   SELECT SUM(p.person_contacted_number)
+ FROM person p; */
+ 
+  SELECT COUNT(DISTINCT p.person_first_name)
  FROM person p;
+ 
  
