@@ -7,7 +7,6 @@ ORDER BY p.person_last_name;*/
 /* SELECT COUNT(person_first_name)
 FROM person p
 WHERE p.person_last_name = 'Ahern';
-
  SELECT MAX(p.person_contacted_number)
  FROM person p;
  
@@ -27,12 +26,11 @@ WHERE p.person_last_name = 'Ahern';
 COUNT(p.person_first_name),
 p.person_first_name
 FROM person p
-GROUP BY p.person_first_name;*/
+GROUP BY p.person_fir--st_name;*/
 
-SELECT 
+SELECT
 COUNT(p.person_first_name) as FirstNameCount,
 p.person_first_name
 FROM person p
 GROUP BY p.person_first_name
-HAVING FirstNameCount > 0;
- 
+HAVING FirstNameCount > 0; 
